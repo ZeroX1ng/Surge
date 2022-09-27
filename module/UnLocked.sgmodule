@@ -34,4 +34,4 @@ NotBoring=type=http-response,pattern=^https?:\/\/api-weather\.andy\.works\/v\d\/
 Appraven=type=http-response,pattern=^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy),requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
 
 [MITM]
-hostname= %APPEND% appraven.net, api.duitang.com, open3.vistastory.com, wallpaper.soutushenqi.com, api-weather.andy.works, account.wps.cn, appraven.net, license.pdfexpert.com, api.revenuecat.com, apjson.nftvio.space
+hostname= %APPEND% appraven.net, api.duitang.com, wallpaper.soutushenqi.com, api-weather.andy.works, account.wps.cn, appraven.net, license.pdfexpert.com, api.revenuecat.com, apjson.nftvio.space

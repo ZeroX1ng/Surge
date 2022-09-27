@@ -18,8 +18,8 @@ Libvio=type=http-response,pattern=^https?:\/\/apjson\.nftvio\.space\/xgapp\.php\
 #doctuments+ 订阅 @lutqhysky
 doctuments=type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh,requires-body=1,script-path=https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/documents/Script/documents.js
 
-# Appraven(美化)@ddgksf2013
-Appraven=type=http-response,pattern=^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy),requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
+# > 107 看天下解锁会员权限（2022-09-02）@ddgksf2013
+ktx=type=http-response,pattern=^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center),requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/ktx.js
 
 # > 106 搜图神器解锁会员权限（2022-08-31）@Mr.Eric
 soutushenqi2 = type=http-response,argument=vipType": 0+->vipType": 1024,pattern=http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account\/token,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,script-update-interval=0
@@ -34,4 +34,4 @@ NotBoring=type=http-response,pattern=^https?:\/\/api-weather\.andy\.works\/v\d\/
 Appraven=type=http-response,pattern=^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy),requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
 
 [MITM]
-hostname= %APPEND% appraven.net, api.duitang.com, wallpaper.soutushenqi.com, api-weather.andy.works, account.wps.cn, appraven.net, license.pdfexpert.com, api.revenuecat.com, apjson.nftvio.space
+hostname= %APPEND% appraven.net, api.duitang.com, wallpaper.soutushenqi.com, api-weather.andy.works, account.wps.cn, license.pdfexpert.com, api.revenuecat.com, apjson.nftvio.space, open3.vistastory.com

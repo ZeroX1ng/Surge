@@ -1,5 +1,5 @@
-#!name=墨鱼app解锁
-#!desc=各种app解锁
+#!name=app解锁改写
+#!desc=墨鱼为主，lutqhysky 次之
 [Script]
 # 主要模块来源：https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/UnlockApp.conf
 
@@ -9,10 +9,16 @@
 # request-body 带参数的参数转换（需要配脚本）
 # 名字 = type=http-response,argument="success":\d+->"success":1,pattern=^http[s]?:\/\/(.+)\.(com|club)\/api\/v1\/movies\/(.+)\/play,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,script-update-interval=0
 
+#gear
+grae=type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gear.js
+#Libvio 解除app购买注册观看限制 @lutqhysky
+Libvio=type=http-response,pattern=^https?:\/\/apjson\.nftvio\.space\/xgapp\.php\/v2\/(video_detail|app_config),requires-body=1,script-path=https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/Libvio/Script/Libvio.js
 
-# Appraven(美化)
+#doctuments+ 订阅 @lutqhysky
+doctuments=type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh,requires-body=1,script-path=https://raw.githubusercontent.com/lutqhysky/quantumultx/mylove/documents/Script/documents.js
+
+# Appraven(美化)@ddgksf2013
 Appraven=type=http-response,pattern=^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy),requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
-
 
 # > 107 看天下解锁会员权限（2022-09-02）@ddgksf2013
 ktx=type=http-response,pattern=^https?:\/\/open3\.vistastory\.com\/v\d\/api\/(article\/article_detail|vip\/get_vip|my\/home\/get_home_center),requires-body=1,script-path=script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/ktx.js
@@ -30,4 +36,4 @@ NotBoring=type=http-response,pattern=^https?:\/\/api-weather\.andy\.works\/v\d\/
 Appraven=type=http-response,pattern=^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy),requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
 
 [MITM]
-hostname= %APPEND% appraven.net, api.duitang.com, open3.vistastory.com, wallpaper.soutushenqi.com, api-weather.andy.works, account.wps.cn, appraven.net
+hostname= %APPEND% appraven.net, api.duitang.com, open3.vistastory.com, wallpaper.soutushenqi.com, api-weather.andy.works, account.wps.cn, appraven.net, license.pdfexpert.com, api.revenuecat.com, apjson.nftvio.space

@@ -18,7 +18,7 @@
 # Script-path: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
 # Availability: 2022/09/27 ✔
 # Tips: 
-PDFExpert = type=http-request, requires-body=1, pattern=^https?:\/\/license\.pdfexpert\.com\/api\/\d\.\d\/pdfexpert6\/subscription\/(state$|refresh$|check$), script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
+PDFExpert = type=http-request, requires-body=1, pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/pdfexpert6\/subscription\/refresh, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
 
 # Name: 看理想 
 

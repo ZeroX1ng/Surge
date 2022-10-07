@@ -10,17 +10,8 @@
 # 名字 = type=http-response,argument="success":\d+->"success":1,pattern=^http[s]?:\/\/(.+)\.(com|club)\/api\/v1\/movies\/(.+)\/play,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,script-update-interval=0
 
 
-# Name: PDFExpert 
-# Author: 89996462/Quantumult-X
-# hostname: license.pdfexpert.com
-# Type: http-request
-# Pattern: ^https?:\/\/license\.pdfexpert\.com\/api\/\d\.\d\/pdfexpert6\/subscription\/(state$|refresh$|check$)
-# Script-path: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
-# Availability: 2022/09/27 ✔
-# Tips: 
-PDFExpert = type=http-request, requires-body=1, pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/pdfexpert6\/subscription\/refresh, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
-
-# Name: 看理想 
+# Name: documents文件管理器+解锁订阅 
+documents文件管理器 = type=http-request, requires-body=1, pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/documents.js
 
 #workingcopy
 workingcopy=type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/markwhitey/QXScripts/master/Unlock/workingcopy.js,script-update-interval=0
